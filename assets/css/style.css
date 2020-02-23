@@ -1,0 +1,27 @@
+h1 {
+    background-color: orange;
+    color: white;
+    padding: 25px;
+    margin: 10px;
+}
+
+.info {
+    background-color: peachpuff;
+    color: green;
+    padding-bottom: 50px;
+}
+
+.points {
+    background-color: rgb(59, 190, 118);
+    color: black;
+}
+
+.totalScore {
+    background-color: rgb(59, 122, 93);
+    color: whitesmoke;
+}
+
+.diamondTotal {
+    background-color: rgb(59, 122, 93);
+    color: whitesmoke;
+}
