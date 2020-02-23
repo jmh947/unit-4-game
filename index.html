@@ -13,7 +13,7 @@
       crossorigin="anonymous"></script>
 
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+      
   </header>
   <body>
     <h1>Crystals Collector</h1>
@@ -35,9 +35,16 @@
       </p>
     </div>
 
-    <!--Enter variables here!! -->
+    <div class= randomNumber>
+        <!--Enter variables here!! -->
      <!--Variable to select the random number between 19-120-->
-      
+      var random= Math.floor(Math.random()* 101+19)
+      $('#randomNumber').text(random);
+
+    </div>
+
+    <div class= diamonds>
+    <!--Enter variables here!! -->
      <!--Variable for diamond 1 between 1-12-->
 
      <!--ariable for diamond 2 between 1-12-->
@@ -45,6 +52,8 @@
      <!--Variable for diamond 3 between 1-12-->
 
      <!--Variable for diamond 4 between 1-12-->
+
+    </div>
 
      <!--Variable for Total Score-->
 
@@ -65,8 +74,7 @@
     </div>
 
      <!--Enter link for javascript-->
-     <script type="application/javascript">
-      document.getElementById("demo").innerHTML = "Hello JavaScript!";
-      </script>
+
+    
   </body>
 </html>
