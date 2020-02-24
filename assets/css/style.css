@@ -8,20 +8,47 @@ h1 {
 .info {
     background-color: peachpuff;
     color: green;
-    padding-bottom: 50px;
+    padding: 10px 35px 50px 15px;
+    margin: 10px;
+    
+}
+
+.randomNumber {
+    background-color: rgb(85, 194, 85);
+    color: rgba(92, 24, 24, 0.404);
+    height: 100px;
+    width: 250px;
+    margin: 10px;
 }
 
 .points {
-    background-color: rgb(59, 190, 118);
-    color: black;
+    background-color: rgb(41, 228, 241);
+    color: rgba(92, 24, 24, 0.404);
+    margin: 10px;
+    padding-left: 15px;
+    flex-direction: row-reverse;
+    height: 100px;
+    width: 75px;
 }
 
 .totalScore {
     background-color: rgb(59, 122, 93);
     color: whitesmoke;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    margin: 10px;
 }
 
-.diamondTotal {
+.jewelTotal {
     background-color: rgb(59, 122, 93);
     color: whitesmoke;
+    padding-left: 15px;
+    margin: 10px;
+    padding-bottom: 200px;
 }
+
+.jewels{
+    width: 100%;
+}
+
+
