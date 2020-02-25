@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UT8" />
-  <header>
+  <head>
     <title>Crystal Game</title>
 
     <!--Enter Links for Bootstrap and JQuery and Css//-->
@@ -14,7 +14,7 @@
 
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
-  </header>
+  </head>
   <body>
     <h1>Crystals Collector</h1>
 
@@ -36,26 +36,30 @@
     </div>
 
     <div class= randomNumber>
-      <p>Random number goes here</p>
+      <p>Number To Get:</p>
     </div>
 
     <div class= jewels>
 
-    <img scr= "/Users/jaclynhardy/Documents/Bootcamp/Projects/unit-4-game/assets/images/images-1.jpg" alt="Jewel 1" height="42" width="42" class= "num1">
-    <img scr= "/Users/jaclynhardy/Documents/Bootcamp/Projects/unit-4-game/assets/images/images-2.jpg" alt="Jewel 2" height="42" width="42" class= "num2">
-    <img scr= "/Users/jaclynhardy/Documents/Bootcamp/Projects/unit-4-game/assets/images/images-3.jpg" alt="Jewel 3" height="42" width="42" class= "num3">
-    <img scr= "/Users/jaclynhardy/Documents/Bootcamp/Projects/unit-4-game/assets/images/images.jpg"   alt="Jewel 4" height="42" width="42" class= "num4">
+    <img scr= "assets/images/images-1.jpg" alt="Jewel 1" height="42" width="42" class= "num1">
+    <img scr= "assets/images/images-2.jpg" alt="Jewel 2" height="42" width="42" class= "num2">
+    <img scr= "assets/images/images-3.jpg" alt="Jewel 3" height="42" width="42" class= "num3">
+    <img scr= "assets/images/images.jpg"   alt="Jewel 4" height="42" width="42" class= "num4">
 
   </div>
    
 
     <div class="points">
-      Wins: 
-      <br>
-      Losses:
+      <p >Wins:
+          <span id= "numberWins"></span>
+          <br>
+          Losses:
+          <span id= "numberLosses"></span>
+      </p>
+ 
     </div>
 
-    <p class= totalScore>Your total score is:</p>
+    <p class= totalScore>Your jewel total is:</p>
 
     <div class="jewelTotal">
        <!--Enter Var for Total Score-->
