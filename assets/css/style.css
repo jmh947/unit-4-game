@@ -1,8 +1,13 @@
+body {
+    background-color: black;
+}
+
 h1 {
     background-color: orange;
     color: white;
     padding: 25px;
     margin: 10px;
+    width: 420px;
 }
 
 .info {
@@ -10,6 +15,7 @@ h1 {
     color: green;
     padding: 10px 35px 50px 15px;
     margin: 10px;
+    width: 750px;
     
 }
 
@@ -19,6 +25,7 @@ h1 {
     height: 100px;
     width: 250px;
     margin: 10px;
+    text-align: center;
 }
 
 #points {
@@ -28,15 +35,17 @@ h1 {
     padding-left: 15px;
     flex-direction: row-reverse;
     height: 100px;
-    width: 75px;
+    width: 100px;
 }
 
-#totalScore {
+#finalScore {
     background-color: rgb(59, 122, 93);
     color: whitesmoke;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-left: 15px;
     margin: 10px;
+    width: 50%;
+    text-align: center;
 }
 
 #jewelTotal {
@@ -44,7 +53,9 @@ h1 {
     color: whitesmoke;
     padding-left: 15px;
     margin: 10px;
-    padding-bottom: 200px;
+    padding-bottom: 5px;
+    width: 50%;
+    text-align: center;
 }
 
 #jewels{
