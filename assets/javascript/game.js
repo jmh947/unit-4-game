@@ -1,5 +1,5 @@
 //Enter variables here!
-
+$(document).ready(function(){
 //Variable to select the random number between 19-120
  var random= Math.floor(Math.random()* 101+19)
 
@@ -7,7 +7,7 @@
  $('randomNumber').text(random)
 
 //Variable for diamond 1 between 1-12
- var num1= Math.floor(Math.random() *11+1)
+var num1= Math.floor(Math.random() *11+1)
 //Variable for diamond 2 between 1-12
 var num2= Math.floor(Math.random() *11+1)
 //Variable for diamond 3 between 1-12
@@ -28,10 +28,10 @@ function reset(){
     random= Math.floor(Math.random()* 101+19);
     console.log(random)
     $('#randomNumber').text(random);
-    num1= Math.floor(Math.random()*11+1);
-    num2= Math.floor(Math.random()*11+1);
-    num3= Math.floor(Math.random()*11+1);
-    num4= Math.floor(Math.random()*11+1);
+     num1= Math.floor(Math.random()*11+1);
+     num2= Math.floor(Math.random()*11+1);
+     num3= Math.floor(Math.random()*11+1);
+     num4= Math.floor(Math.random()*11+1);
     jewelTotal= 0;
     $('#finalScore').text(jewelTotal);
     }
@@ -53,8 +53,8 @@ function lose () {
 }
 
 //Sets up on click for jewels
-$('num1').click(function() {
-    jewelTotal = jewlTotal + num1;
+$('#num1').on('click', function() {
+    jewelTotal = jewelTotal + num1;
     console.log("new jewelTotal= " + jewelTotal);
     $('#finalScore').text(jewelTotal);
         //sets win/lose conditions
@@ -68,8 +68,8 @@ $('num1').click(function() {
 })
 
 
-$('num2').click(function() {
-    jewelTotal = jewlTotal + num2;
+$('#num2').on('click', function() {
+    jewelTotal = jewelTotal + num2;
     console.log("new jewelTotal= " + jewelTotal);
     $('#finalScore').text(jewelTotal);
         //sets win/lose conditions
@@ -82,8 +82,8 @@ $('num2').click(function() {
     }
 })
 
-$('num3').click(function() {
-    jewelTotal = jewlTotal + num3;
+$('#num3').on('click', function() {
+    jewelTotal = jewelTotal + num3;
     console.log("new jewelTotal= " + jewelTotal);
     $('#finalScore').text(jewelTotal);
         //sets win/lose conditions
@@ -96,8 +96,8 @@ $('num3').click(function() {
     }
 })
 
-$('num4').click(function() {
-    jewelTotal = jewlTotal + num4;
+$('#num4').on('click', function() {
+    jewelTotal = jewelTotal + num4;
     console.log("new jewelTotal= " + jewelTotal);
     $('#finalScore').text(jewelTotal);
         //sets win/lose conditions
@@ -109,5 +109,7 @@ $('num4').click(function() {
         lose();
     }
 });
+});
+
 
 
