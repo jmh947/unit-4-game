@@ -4,7 +4,7 @@ $(document).ready(function(){
  var random= Math.floor(Math.random()* 101+19)
 
  //Appending random number to the randomNumber id in the html doc
- $('randomNumber').text(random)
+ $('#randomNumber').text(random)
 
 //Variable for diamond 1 between 1-12
 var num1= Math.floor(Math.random() *11+1)
@@ -17,10 +17,10 @@ var num4= Math.floor(Math.random() *11+1)
 
 //Declares variables for the score
 var jewelTotal=0;
-var wins = 0;
+var win = 0;
 var losses = 0;
 
-$('#numberWins').text(wins);
+$('#numberWins').text(win);
 $('#numberLosses').text(losses);
 
 //Resets the game
@@ -33,14 +33,14 @@ function reset(){
      num3= Math.floor(Math.random()*11+1);
      num4= Math.floor(Math.random()*11+1);
     jewelTotal= 0;
-    $('#finalScore').text(jewelTotal);
+    $('#jewelTotal').text(jewelTotal);
     }
 
 //Adds wins to the finalScore
 function win () {
     alert ("You won!");
     win++;
-    $('#numberWins').text(wins);
+    $('#numberWins').text(win);
     reset();
 }
 
@@ -56,10 +56,10 @@ function lose () {
 $('#num1').on('click', function() {
     jewelTotal = jewelTotal + num1;
     console.log("new jewelTotal= " + jewelTotal);
-    $('#finalScore').text(jewelTotal);
+    $('#jewelTotal').text(jewelTotal);
         //sets win/lose conditions
     if (jewelTotal === random) {
-        win();
+        win ();
     }
 
     else if (jewelTotal > random) {
@@ -71,10 +71,10 @@ $('#num1').on('click', function() {
 $('#num2').on('click', function() {
     jewelTotal = jewelTotal + num2;
     console.log("new jewelTotal= " + jewelTotal);
-    $('#finalScore').text(jewelTotal);
+    $('#jewelTotal').text(jewelTotal);
         //sets win/lose conditions
     if (jewelTotal === random) {
-        win();
+        win ();
     }
 
     else if (jewelTotal > random) {
@@ -85,10 +85,10 @@ $('#num2').on('click', function() {
 $('#num3').on('click', function() {
     jewelTotal = jewelTotal + num3;
     console.log("new jewelTotal= " + jewelTotal);
-    $('#finalScore').text(jewelTotal);
+    $('#jewelTotal').text(jewelTotal);
         //sets win/lose conditions
     if (jewelTotal === random) {
-        win();
+        win ();
     }
 
     else if (jewelTotal > random) {
@@ -99,10 +99,10 @@ $('#num3').on('click', function() {
 $('#num4').on('click', function() {
     jewelTotal = jewelTotal + num4;
     console.log("new jewelTotal= " + jewelTotal);
-    $('#finalScore').text(jewelTotal);
+    $('#jewelTotal').text(jewelTotal);
         //sets win/lose conditions
     if (jewelTotal === random) {
-        win();
+        win ();
     }
 
     else if (jewelTotal > random) {

@@ -13,7 +13,7 @@ h1 {
     
 }
 
-.randomNumber {
+#randomNumber {
     background-color: rgb(85, 194, 85);
     color: rgba(92, 24, 24, 0.404);
     height: 100px;
@@ -21,7 +21,7 @@ h1 {
     margin: 10px;
 }
 
-.points {
+#points {
     background-color: rgb(41, 228, 241);
     color: rgba(92, 24, 24, 0.404);
     margin: 10px;
@@ -31,7 +31,7 @@ h1 {
     width: 75px;
 }
 
-.totalScore {
+#totalScore {
     background-color: rgb(59, 122, 93);
     color: whitesmoke;
     padding-bottom: 20px;
@@ -39,7 +39,7 @@ h1 {
     margin: 10px;
 }
 
-.jewelTotal {
+#jewelTotal {
     background-color: rgb(59, 122, 93);
     color: whitesmoke;
     padding-left: 15px;
@@ -47,8 +47,9 @@ h1 {
     padding-bottom: 200px;
 }
 
-.jewels{
+#jewels{
     width: 100%;
+    height: 100%;
 }
 
 
